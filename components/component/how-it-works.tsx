@@ -52,12 +52,12 @@ export function HowItWorks() {
           >
             How It Works
           </Link>
-          <Button
-            variant="secondary"
-            className="inline-flex h-9 items-center justify-center rounded-md px-4 text-sm font-medium shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-          >
-            Connect Wallet
-          </Button>
+          <Link
+      href="/connect-wallet"
+      className="inline-flex items-center justify-center h-10 px-8 text-sm font-medium text-white bg-blue-500 rounded-md shadow-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+    >
+      Connect Wallet
+    </Link>
         </nav>
       </header>
       <section className="w-full py-12 md:py-24 lg:py-32 bg-primary">
@@ -73,7 +73,7 @@ export function HowItWorks() {
                   your wallet to get started.
                 </p>
               </div>
-              <Button className="inline-flex h-10 items-center justify-center rounded-md px-8 text-sm font-medium shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
+              <Button  className="inline-flex h-10 items-center justify-center rounded-md px-8 text-sm font-medium shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
                 Connect Wallet
               </Button>
             </div>
