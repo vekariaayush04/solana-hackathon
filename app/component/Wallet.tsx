@@ -20,20 +20,20 @@ type Props = {
 
 export const Wallet: FC<Props> = ({ children }) => {
   //input your RPC as your endpoint value
-  const endpoint = 'https://api-devnet.helius.xyz';
+  const endpoint = process.env.DEVNET_ENDPOINT!;
 
-  const wallets = useMemo(
-    () => [
-      new SolflareWalletAdapter(),
-      new AlphaWalletAdapter(),
-      new LedgerWalletAdapter(),
-    ],
-    []
-  );
+  // const wallets = useMemo(
+  //   () => [
+  //     new SolflareWalletAdapter(),
+  //     new AlphaWalletAdapter(),
+  //     new LedgerWalletAdapter(),
+  //   ],
+  //   []
+  // );
 
   return (
     <ConnectionProvider endpoint={endpoint}>
-      <WalletProvider wallets={wallets} autoConnect={true}>
+      <WalletProvider wallets={[]} autoConnect={true}>
         <WalletModalProvider>{children}</WalletModalProvider>
       </WalletProvider>
     </ConnectionProvider>
