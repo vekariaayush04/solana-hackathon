@@ -33,25 +33,16 @@ export function HowItWorks() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <header className="px-4 lg:px-6 h-14 flex items-center bg-background border-b">
-        <Link href="#" className="flex items-center justify-center" prefetch={false}>
-          <BitcoinIcon className="h-6 w-6 text-primary" />
-          <span className="sr-only">Solana Voting</span>
-        </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link
-            href="#"
-            className="text-sm font-medium hover:underline underline-offset-4 text-primary-foreground"
-            prefetch={false}
-          >
-            Home
-          </Link>
-          <Link
-            href="#"
-            className="text-sm font-medium hover:underline underline-offset-4 text-primary-foreground"
-            prefetch={false}
-          >
-            How It Works
-          </Link>
+        
+        <nav className="ml-auto  flex gap-4 sm:gap-6">
+        <Link
+  href="/"
+  className="text-sm py-2 font-medium hover:underline underline-offset-4 text-black"
+  prefetch={false}
+>
+  Home
+</Link>
+
           <Link
       href="/connect-wallet"
       className="inline-flex items-center justify-center h-10 px-8 text-sm font-medium text-white bg-blue-500 rounded-md shadow-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
